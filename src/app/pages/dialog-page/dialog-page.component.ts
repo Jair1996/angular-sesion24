@@ -1,8 +1,9 @@
 import { Component, Inject } from '@angular/core';
 import {MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
+import { DialogOverviewComponent } from '../dialog-overview/dialog-overview.component';
 
 export interface DialogData {
-  animal: string;
+  deporte: string;
   name: string;
 }
 
@@ -12,21 +13,19 @@ export interface DialogData {
   styleUrls: ['./dialog-page.component.scss']
 })
 export class DialogPageComponent {
-  animal: string = '';
+  deporte: string = '';
   name: string = '';
 
   constructor(public dialog: MatDialog) {}
 
   openDialog(): void {
-    // const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
-    //   data: {name: this.name, animal: this.animal},
-    // });
+    const dialogRef = this.dialog.open(DialogOverviewComponent, {
+      data: {name: this.name, deporte: this.deporte},
+    });
 
-    // dialogRef.afterClosed().subscribe(result => {
-    //   console.log('The dialog was closed');
-    //   this.animal = result;
-    // });
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      this.deporte = result;
+    });
   }
 }
-
-
