@@ -6,6 +6,11 @@ import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
   templateUrl: './home-page.component.html',
   styles: [
     `
+      .example-header-image {
+        background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+        background-size: cover;
+      }
+
       .grid-container {
         margin: 20px;
       }
