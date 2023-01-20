@@ -1,0 +1,53 @@
+<div class="container">
+  <form autocomplete="off">
+    <div class="grid">
+      <div class="">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Nombre</mat-label>
+          <input matInput placeholder="Jair" />
+          <mat-error *ngIf="false">El campo es requerido</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Apellido</mat-label>
+          <input matInput placeholder="Tello" />
+          <mat-error *ngIf="false">El campo es requerido</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Username</mat-label>
+          <input matInput placeholder="pepe123" />
+          <mat-error *ngIf="false">El campo es requerido</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Correo</mat-label>
+          <input type="email" matInput placeholder="pep@example.com" />
+          <mat-error *ngIf="false">El correo no es válido</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Contraseña</mat-label>
+          <input type="password" matInput placeholder="******" />
+          <mat-error *ngIf="false">El campo es requerido</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Dirección</mat-label>
+          <input matInput placeholder="123 Calle San Lorenzo" />
+          <mat-error *ngIf="false">El campo es requerido</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="">
+        <button type="button" mat-raised-button color="primary">
+          Crear Usuario
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

@@ -6,6 +6,7 @@ import { TablePageComponent } from './table-page/table-page.component';
 import { MaterialModule } from '../material/material.module';
 import { FormsModule } from '@angular/forms';
 import { DialogOverviewComponent } from './dialog-overview/dialog-overview.component';
+import { FormPageComponent } from './form-page/form-page.component';
 
 
 
@@ -14,12 +15,14 @@ import { DialogOverviewComponent } from './dialog-overview/dialog-overview.compo
     HomePageComponent,
     DialogPageComponent,
     TablePageComponent,
-    DialogOverviewComponent
+    DialogOverviewComponent,
+    FormPageComponent
   ],
   exports: [
     HomePageComponent,
     DialogPageComponent,
-    TablePageComponent
+    TablePageComponent,
+    FormPageComponent
   ],
   imports: [
     CommonModule,
